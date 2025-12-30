@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Data Analyzer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<!-- CENTERED CONTENT -->
+<div class="hero">
+
+    <h1 class="title">CSV Data Analyzer</h1>
+
+    <form method="POST" enctype="multipart/form-data" class="upload-box">
+        <input type="file" id="fileInput" name="file" hidden>
+
+        <label for="fileInput" class="file-btn">Choose File</label>
+        <span id="fileName">No file chosen</span>
+
+        <button type="submit" class="upload-btn">Upload CSV</button>
+    </form>
+
+</div>
+
+</body>
+</html>
+
+
+<!-- ================= DATA SUMMARY ================= -->
+{% if summary %}
+<div class="card">
+    <h3>Dataset Summary</h3>
+    <p><b>Rows:</b> {{ summary.rows }}</p>
+    <p><b>Columns:</b> {{ summary.columns }}</p>
+    <p><b>Missing Values:</b> {{ summary.missing }}</p>
+</div>
+{% endif %}
+
+<!-- ================= DATA TABLE ================= -->
+{% if data %}
+<div class="card">
+    <h3>Data Preview</h3>
+    {{ data | safe }}
+</div>
+{% endif %}
+
+</body>
+</html>
