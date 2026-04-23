@@ -1,24 +1,38 @@
-CSV Data Analyzer
+# CSV Data Analyzer
 
 A simple web app to upload and explore CSV files in the browser.
-Built using Flask and Pandas, it shows a quick summary of the dataset and a preview of the data without needing any setup.
+Built using Flask and Pandas, it shows a quick summary of the dataset and a preview of the data.
 
-Live Demo
+---
+
+## 🔗 Live Demo
 
 https://csv-data-analyzer-rnas.onrender.com/
 
-What it does
-Upload a CSV file from your system
-Shows number of rows and columns
-Counts missing values in the dataset
-Displays a preview of the data (first few rows)
-Clean UI with a smooth animated background
-Tech used
-Python (Flask)
-Pandas
-HTML, CSS
-JavaScript
-Project structure
+---
+
+## 📌 Features
+
+* Upload a CSV file
+* View number of rows and columns
+* Check missing values
+* Preview dataset (first few rows)
+* Clean UI with animated background
+
+---
+
+## 🛠 Tech Stack
+
+* Python (Flask)
+* Pandas
+* HTML, CSS
+* JavaScript
+
+---
+
+## 📂 Project Structure
+
+```
 csv-data-analyzer/
 │
 ├── app.py
@@ -32,25 +46,56 @@ csv-data-analyzer/
 │   └── index.html
 │
 ├── uploads/
-How to run locally
-Clone the repo
+```
+
+---
+
+## ⚙️ Run Locally
+
+1. Clone the repository
+
+```
 git clone https://github.com/manisha68299/csv-data-analyzer.git
 cd csv-data-analyzer
-Install dependencies
+```
+
+2. Install dependencies
+
+```
 pip install -r requirements.txt
-Run the app
+```
+
+3. Run the app
+
+```
 python app.py
-Open in browser
+```
+
+4. Open in browser (local)
+
+```
 http://127.0.0.1:5000
-Notes
-Some CSV files with different encodings are handled automatically
-Uploaded files are stored temporarily in the uploads folder
-Future improvements
-Add charts for better data understanding
-Filter data by column
-Download cleaned CSV
-Improve error handling
-Author
+```
+
+---
+
+## 📝 Notes
+
+* Handles CSV files with different encodings
+* Uploaded files are stored temporarily
+
+---
+
+## 🚀 Future Improvements
+
+* Add charts and graphs
+* Column-based filtering
+* Download cleaned CSV
+* Better error handling
+
+---
+
+## 👩‍💻 Author
 
 Manisha Banerjee
 https://github.com/manisha68299
