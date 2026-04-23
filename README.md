@@ -1,78 +1,56 @@
 CSV Data Analyzer
 
-A modern CSV Data Analyzer Web Application built using Python Flask, HTML, CSS, and JavaScript.
-It allows users to upload CSV files, view dataset summaries, and preview data in a clean, interactive UI.
+A simple web app to upload and explore CSV files in the browser.
+Built using Flask and Pandas, it shows a quick summary of the dataset and a preview of the data without needing any setup.
 
-🚀 Features
+Live Demo
 
-✅ Upload CSV files
-✅ Display dataset summary (rows, columns, missing values)
-✅ Data preview in table format
-✅ Stylish dark UI with particle animation
-✅ Responsive layout
-✅ Clean and beginner-friendly code structure
+https://csv-data-analyzer-rnas.onrender.com/
 
-🛠 Tech Stack
-Technology	Used For
-Python	Backend logic
-Flask	Web framework
-Pandas	CSV processing
-HTML5	Page structure
-CSS3	Styling & UI
-JavaScript	Interactions
-Git & GitHub	Version control
-📂 Project Structure
+What it does
+Upload a CSV file from your system
+Shows number of rows and columns
+Counts missing values in the dataset
+Displays a preview of the data (first few rows)
+Clean UI with a smooth animated background
+Tech used
+Python (Flask)
+Pandas
+HTML, CSS
+JavaScript
+Project structure
 csv-data-analyzer/
 │
 ├── app.py
 ├── requirements.txt
+│
 ├── static/
 │   ├── style.css
 │   └── script.js
+│
 ├── templates/
 │   └── index.html
-├── uploads/          # (ignored in git)
-└── README.md
-
-⚙️ Installation & Setup
-1️⃣ Clone the repository
+│
+├── uploads/
+How to run locally
+Clone the repo
 git clone https://github.com/manisha68299/csv-data-analyzer.git
 cd csv-data-analyzer
-
-2️⃣ Install dependencies
+Install dependencies
 pip install -r requirements.txt
-
-3️⃣ Run the application
+Run the app
 python app.py
-
-4️⃣ Open in browser
+Open in browser
 http://127.0.0.1:5000
-
-📸 Application Preview
-
-✔ Centered title
-✔ Upload section
-✔ Dataset summary
-✔ Data preview table
-✔ Smooth animated background
-🎯 Future Improvements
-
-📊 Charts & graphs (Matplotlib / Plotly)
-
-📥 Export cleaned CSV
-
-🔍 Column-wise filtering
-
-📈 Data visualization dashboard
-
-🌐 Deploy on Render / Vercel
-
-👩‍💻 Author
+Notes
+Some CSV files with different encodings are handled automatically
+Uploaded files are stored temporarily in the uploads folder
+Future improvements
+Add charts for better data understanding
+Filter data by column
+Download cleaned CSV
+Improve error handling
+Author
 
 Manisha Banerjee
-🔗 GitHub: @manisha68299
-
-⭐ If You Like This Project
-
-Give it a ⭐ on GitHub
-It motivates me to build more!
+https://github.com/manisha68299
